@@ -1,4 +1,4 @@
-package com.nyangzzi.scrollingtextanimation
+package com.nyangzzi.scrollinganimation.core
 
 import org.junit.Test
 

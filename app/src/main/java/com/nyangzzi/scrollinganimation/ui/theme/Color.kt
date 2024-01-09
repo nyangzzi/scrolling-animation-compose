@@ -1,4 +1,4 @@
-package com.nyangzzi.scrollingtextanimation.ui.theme
+package com.nyangzzi.scrollinganimation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

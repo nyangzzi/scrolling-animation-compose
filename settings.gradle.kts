@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ScrollingTextAnimation"
+rootProject.name = "ScrollingAnimation"
 include(":app")
- 
+include(":core")
