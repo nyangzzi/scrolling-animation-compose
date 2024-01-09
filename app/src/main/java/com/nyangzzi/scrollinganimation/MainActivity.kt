@@ -7,8 +7,11 @@ import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.verticalScroll
@@ -125,7 +128,7 @@ private fun ExampleScrollingHorizontal(){
 private fun HorizontalText(deceleration: Float, direction: HorizontalDirection){
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
         Text("deceleration: $deceleration")
-        ScrollingHorizontal(deceleration = deceleration, direction = direction) {
+        ScrollingHorizontal(deceleration = deceleration, direction = direction, modifier = Modifier.fillMaxWidth()) {
             Text("test animation")
         }
     }
@@ -178,7 +181,7 @@ private fun ExampleScrollingVertical(){
 private fun VerticalText(deceleration: Float, direction: VerticalDirection){
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
         Text("deceleration: $deceleration")
-        ScrollingVertical(deceleration = deceleration, direction = direction) {
+        ScrollingVertical(deceleration = deceleration, direction = direction, modifier = Modifier.fillMaxHeight()) {
             Text("test animation")
         }
     }

@@ -10,7 +10,6 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.BoxWithConstraints
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.offset
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -26,6 +25,9 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+/**
+ *
+ */
 @Composable
 fun ScrollingHorizontal(
     modifier : Modifier = Modifier,
@@ -37,7 +39,6 @@ fun ScrollingHorizontal(
     val infiniteTransition = rememberInfiniteTransition(label = "ScrollingHorizontal")
 
     Box(modifier = Modifier
-        .fillMaxWidth()
         .clip(shape).then(modifier)) {
 
         var contentWidth by remember {
