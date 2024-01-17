@@ -26,7 +26,13 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
 /**
+ * Components that flow horizontally
  *
+ * @param modifier The modifier to be applied to the layout.
+ * @param shape How a component clips when it goes off screen.
+ * @param deceleration Reduce component movement speed (default 1ms per 1dp)
+ * @param direction Component movement direction (left/right)
+ * @param content The content of the Box.
  */
 @Composable
 fun ScrollingHorizontal(
